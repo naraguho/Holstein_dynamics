@@ -17,9 +17,3 @@ quasiclassical Holstein model studied in the above paper.
 The code generates nonequilibrium trajectories of the coupled electronic and
 lattice system used to investigate charge-density-wave formation, kink
 dynamics, and coarsening.
-
-## Repository structure
-
-```text
-data_generation/
-    generate_data.jl
