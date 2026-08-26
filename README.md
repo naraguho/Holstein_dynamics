@@ -16,6 +16,23 @@ Simulation code for nonequilibrium dynamics of the Holstein model.
 Additional dynamical limits can be added as sibling directories without
 changing the quasi-classical implementation.
 
+## AI assistance disclosure
+
+This repository was organized and documented with assistance from OpenAI
+Codex, an AI coding agent, using scientific code and research materials
+provided by Ho Jang.
+
+- The quasi-classical Julia programs were moved without changing their source.
+- The Holstein–Ehrenfest program was uploaded without changing its source.
+- The adiabatic program was reorganized and engineering-refactored by Codex
+  from the supplied `data_classical_bath.jl`; its physical model and default
+  simulation parameters were retained.
+- Repository structure, README text, portability improvements, and validation
+  checks include AI-generated contributions.
+
+AI assistance is disclosed for transparency and does not replace independent
+verification of the scientific implementation.
+
 ## Associated papers
 
 ### Holstein–Ehrenfest dynamics
