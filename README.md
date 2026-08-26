@@ -9,6 +9,9 @@ Simulation code for nonequilibrium dynamics of the Holstein model.
   programs and their numerical parameters are preserved unchanged.
 - [`ehrenfest_dynamics/`](ehrenfest_dynamics/) contains the GPU-accelerated
   Holstein–Ehrenfest simulation for interaction-quench dynamics.
+- [`adiabatic_dynamics/`](adiabatic_dynamics/) contains a two-dimensional
+  adiabatic thermal-quench simulation with a classical Langevin bath and its
+  dimensionless derivation notes.
 
 Additional dynamical limits can be added as sibling directories without
 changing the quasi-classical implementation.
