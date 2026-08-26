@@ -1,19 +1,20 @@
-# Holstein_quasiclassical
-# Quasiclassical Holstein Model
+# Holstein Dynamics
 
-Simulation code associated with the paper
+Simulation code for nonequilibrium dynamics of the Holstein model.
+
+## Implemented limits
+
+- [`quasiclassical_limit/`](quasiclassical_limit/) contains the existing
+  one-dimensional quasi-classical Holstein-model setup. The original Julia
+  programs and their numerical parameters are preserved unchanged.
+
+Additional dynamical limits can be added as sibling directories without
+changing the quasi-classical implementation.
+
+## Associated paper
 
 **H. Jang, Y. Yang, and G.-W. Chern,  
 "Anomalous coarsening and nonlinear diffusion of kinks in a one-dimensional quasiclassical Holstein model,"  
 Physical Review E (2026).**
 
 DOI: 10.1103/gc41-d1yq
-
-## Overview
-
-This repository contains numerical simulation code for the one-dimensional
-quasiclassical Holstein model studied in the above paper.
-
-The code generates nonequilibrium trajectories of the coupled electronic and
-lattice system used to investigate charge-density-wave formation, kink
-dynamics, and coarsening.
