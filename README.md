@@ -1,4 +1,4 @@
-# Holstein Dynamics
+# Semiclassical Holstein Dynamics
 
 Simulation code for nonequilibrium dynamics of the Holstein model.
 
