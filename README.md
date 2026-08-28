@@ -33,6 +33,60 @@ provided by Ho Jang.
 AI assistance is disclosed for transparency and does not replace independent
 verification of the scientific implementation.
 
+## Justification for the semiclassical lattice treatment
+
+The simulations in this repository treat the phonon displacement and momentum
+as classical lattice variables rather than as fully quantum-mechanical phonon
+operators. Two physical considerations motivate this approximation in the
+regimes studied here.
+
+### 1. Phonons are slow degrees of freedom
+
+When the characteristic phonon frequency is small compared with the electronic
+energy scale,
+
+$$
+\frac{\hbar\Omega}{t_{\mathrm{nn}}} \ll 1,
+$$
+
+the lattice evolves slowly relative to the electrons. It can then be treated
+as a collective coordinate moving on an electronic energy landscape. In the
+adiabatic implementation, the electronic state is recomputed for each
+instantaneous lattice configuration. In the Ehrenfest implementation, the
+electrons retain their explicit time evolution while the lattice remains
+classical.
+
+### 2. Relative quantum fluctuations are small at strong coupling
+
+The electron-phonon coupling produces a characteristic static distortion
+
+$$
+X_0 = \frac{g}{K},
+$$
+
+whereas the zero-point displacement of a harmonic oscillator is
+
+$$
+\Delta X = \sqrt{\frac{\hbar}{2m\Omega}},
+\qquad
+\Omega = \sqrt{\frac{K}{m}}.
+$$
+
+For fixed mass and stiffness, increasing $g$ increases $X_0$ without increasing
+$\Delta X$. The relative fluctuation therefore becomes small when
+
+$$
+\frac{\Delta X}{X_0} \ll 1.
+$$
+
+This is the strong-coupling regime emphasized in much of this repository: the
+coupling-induced distortion is large compared with the intrinsic quantum
+spread of the oscillator, making a semiclassical lattice description more
+natural. The approximation still neglects genuinely quantum-phonon effects
+such as zero-point dynamics, tunneling between lattice configurations, and
+electron-phonon entanglement; it is expected to be least reliable for fast,
+light phonons or weak coupling.
+
 ## Associated papers
 
 ### Holstein–Ehrenfest dynamics
