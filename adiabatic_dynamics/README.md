@@ -73,3 +73,34 @@ This is a comparison between two parameter regimes, not a controlled sweep of
 sets also differ. The figure therefore supports a qualitative connection to
 cooperative hopping rather than isolating its dependence on a single
 parameter.
+
+### Why the semiclassical description is natural at strong coupling
+
+A simple way to assess the semiclassical lattice approximation is to compare
+the characteristic coupling-induced distortion,
+
+\[
+X_0 = \frac{g}{K},
+\]
+
+with the oscillator's zero-point displacement,
+
+\[
+\Delta X = \sqrt{\frac{\hbar}{2m\Omega}},
+\qquad
+\Omega = \sqrt{\frac{K}{m}}.
+\]
+
+The semiclassical description becomes increasingly well motivated when
+
+\[
+\frac{\Delta X}{X_0} \ll 1.
+\]
+
+For fixed lattice mass and stiffness, increasing the electron-phonon coupling
+`g` increases `X_0` while leaving `Delta X` unchanged. The lattice distortion
+then becomes large compared with its intrinsic quantum fluctuation, making a
+classical treatment of the lattice coordinate more appropriate in the
+strong-coupling regime. This criterion supports the semiclassical lattice
+description; the adiabatic approximation additionally requires the electronic
+sector to relax on a timescale short compared with the lattice motion.
